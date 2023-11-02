@@ -1,0 +1,17 @@
+// import bootstrap
+@import 'bootstrap/dist/css/bootstrap.css';
+
+//import tailwind
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Gilroy', sans-serif;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url('./assets/font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

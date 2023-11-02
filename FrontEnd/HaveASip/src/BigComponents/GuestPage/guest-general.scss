@@ -1,0 +1,17 @@
+.guest-pageContainer {
+
+    .guest-header {
+        height: 80px;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .guest-body {
+        min-height: 1000px;
+        position: relative;
+        
+    }
+}
