@@ -29,11 +29,11 @@ function GuestHeader() {
 
   return (
     <>
-      <nav className='guest-header-container tw-grid tw-grid-cols-2'>
+      <nav className='guest-header-container tw-flex'>
         <div className='guest-header-home'>
           <NavLink style={navStyle} to='#' className='title'>H.A.S</NavLink>
         </div>
-        <div className='guest-header-other tw-justify-self-end'>
+        <div className='guest-header-other'>
           <li><NavLink style={navStyle} to='#'>About</NavLink></li>
           <li><NavLink style={navStyle} to='#'>Contact</NavLink></li>
           <li><NavLink style={navStyle} to='#'>Donate</NavLink></li>
