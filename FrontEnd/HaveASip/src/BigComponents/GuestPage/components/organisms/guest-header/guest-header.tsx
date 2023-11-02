@@ -24,6 +24,7 @@ function GuestHeader() {
 
   const navStyle = {
     color: isScrolled ? 'black' : 'white',
+    transition: isScrolled ? 'color 0.25s linear' : 'color 0.25s linear',
   };
 
   return (

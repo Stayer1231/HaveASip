@@ -8,13 +8,11 @@
 
         a {
             font-size: 46px;
-            color: white;
             text-decoration: none;
         }
     }
 
     .guest-header-other {
-        line-height: 80px;
         margin: 0 20px;
         padding: 0 20px;
         right: 0;
@@ -24,9 +22,15 @@
             display: inline-block;
             list-style: none;
 
+            &:hover {
+                background-color: #077292;
+                transition: ease-out .25s;
+            }
+
             a {
+                display: block;
+                line-height: 80px;
                 font-size: 24px;
-                color: white;
                 text-decoration: none;
             }
         }
