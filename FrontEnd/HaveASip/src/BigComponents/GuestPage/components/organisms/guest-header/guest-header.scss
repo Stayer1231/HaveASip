@@ -19,16 +19,19 @@
         right: 0;
 
         li {
-            padding: 0 20px;
             display: inline-block;
             list-style: none;
 
-            &:hover {
-                background-color: #077292;
-                transition: ease-out .25s;
+            a {
+                &:hover {
+                    background-color: #077292;
+                    color: orange !important;
+                    transition: linear .15s !important;
+                }
             }
 
             a {
+                padding: 0 22px;
                 display: block;
                 line-height: 80px;
                 font-size: 24px;

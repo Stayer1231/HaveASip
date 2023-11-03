@@ -23,20 +23,25 @@ function GuestHeader() {
   }, [isScrolled]);
 
   const navStyle = {
-    color: isScrolled ? 'black' : 'white',
-    transition: isScrolled ? 'color 0.25s linear' : 'color 0.25s linear',
+    color: isScrolled ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)',
+    transition: isScrolled ? 'color 0.23s linear' : 'color 0.23s linear',
+    
   };
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
       <nav className='guest-header-container tw-flex'>
         <div className='guest-header-home'>
-          <NavLink style={navStyle} to='#' className='title'>H.A.S</NavLink>
+          <NavLink style={navStyle} to='#' className='title' onClick={handleClick}>H.A.S</NavLink>
         </div>
         <div className='guest-header-other'>
-          <li><NavLink style={navStyle} to='#'>About</NavLink></li>
-          <li><NavLink style={navStyle} to='#'>Contact</NavLink></li>
-          <li><NavLink style={navStyle} to='#'>Donate</NavLink></li>
+          <li><NavLink style={navStyle} to='#' className='other-section hover-effect'>About</NavLink></li>
+          <li><NavLink style={navStyle} to='#' className='other-section'>Donate</NavLink></li>
+          <li><NavLink style={navStyle} to='#' className='other-section'>Contact</NavLink></li>
         </div>
       </nav>
     </>

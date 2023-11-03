@@ -4,9 +4,10 @@
     background: linear-gradient(0deg, hsla(200, 50%, 78%, 1) 0%, hsla(196, 46%, 57%, 1) 60%, hsla(194, 94%, 32%, 1) 100%);
     z-index: 1;
 
-    .title {
+    .introduction-title {
         font-size: 50px;
         color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     #introduction-box-container {
@@ -17,8 +18,7 @@
             display: flex;
             justify-content: center;
             padding: 8px;
-            background: linear-gradient(135deg, hsla(22, 100%, 98%, 0.8) 0%, hsla(296, 100%, 92%, 0.8) 100%);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(180deg, hsla(22, 100%, 98%, 0.8) 0%, hsla(296, 100%, 92%, 0.4) 100%);
             margin-top: 30px;
             width: clamp(500px, 80%, 800px);
             height: inherit;
@@ -26,22 +26,14 @@
             margin-right: auto;
 
             .information-title {
-                width: clamp(300px, 80%, 800px);
-                margin-top: 80px;
-                font-size: 24px;
+                width: clamp(300px, 85%, 800px);
+                margin-top: 60px;
+                font-size: 26px;
                 color: black;
                 text-align: justify;
+                line-height: 230%;
             }
         }
-
-        .introduction-box::before {
-            background: linear-gradient(135deg, hsla(22, 100%, 98%, 0.85) 0%, hsla(296, 100%, 92%, 0.85) 100%);
-            content: '';
-            filter: blur(2px);
-            position: absolute;
-            inset: 0%;
-            z-index: -1;
-        }
-
+        
     }
 }

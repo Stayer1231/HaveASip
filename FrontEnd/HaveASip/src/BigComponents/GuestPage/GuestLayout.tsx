@@ -26,7 +26,10 @@ function GuestLayout() {
         background: isScrolled
             ? 'rgba(255, 255, 255, 0.4)'
             : 'rgba(240, 240, 255, 0)', // Transparent background with fading effect
-        transition: 'background 0.25s linear',
+        transition: 'background 0.22s linear',
+        boxShadow: isScrolled
+            ? '0 0.5rem 2rem rgba(16,33,60,0.25), 0 0 0.5rem rgba(0,0,0,0.03)'
+            : 'none'
     };
 
     return (

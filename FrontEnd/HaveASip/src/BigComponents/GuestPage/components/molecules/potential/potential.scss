@@ -1,0 +1,91 @@
+.potential-container {
+    width: 100%;
+    height: 1200px;
+    background: linear-gradient(180deg, hsla(200, 50%, 78%, 1) 20%, hsla(179, 41%, 44%, 1) 100%);
+
+    .potential-title {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 50px;
+    }
+
+    .potential-content-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 1000px;
+        background: linear-gradient(180deg, hsla(22, 100%, 98%, 0.4) 0%, hsla(296, 100%, 92%, 0.3) 100%);
+        border-radius: 10px;
+        gap: 60px;
+
+        .box-1 {
+            width: 100%;
+
+            .information-1 {
+                background: {
+                    image: url('https://media.istockphoto.com/id/925440650/photo/underwater-bubbles.jpg?s=612x612&w=0&k=20&c=k_iJkW8e2l7UdUvxRviAFanteIKgsOUYDkWtBrl8nzs=');
+                    repeat: no-repeat;
+                    position: center center;
+                    size: cover;
+                }
+
+                border-radius: 10px 0 0 0;
+                min-width: 40%;
+                height: calc(880px / 3);
+            }
+
+            .content-1 {
+                width: 60%;
+            }
+        }
+
+        .box-2 {
+            width: 100%;
+
+            .information-2 {
+                background: {
+                    image: url('https://cdn.pixabay.com/photo/2014/12/24/05/02/drop-of-water-578897_1280.jpg');
+                    repeat: no-repeat;
+                    position: center center;
+                    size: cover;
+                }
+
+                min-width: 40%;
+                height: calc(880px / 3);
+            }
+
+            .content-2 {
+                width: 60%;
+            }
+        }
+
+        .box-3 {
+            .information-3 {
+                background: {
+                    image: url('https://mywaterfilter.com.au/cdn/shop/articles/risk.jpg?v=1597719447');
+                    repeat: no-repeat;
+                    position: center center;
+                    size: cover;
+                }
+
+                border-radius: 0 0 0 10px;
+                min-width: 40%;
+                height: calc(880px / 3);
+            }
+
+            .content-3 {
+                width: 60%;
+            }
+        }
+
+        ul {
+            padding: 0 20px;
+
+            li {
+                list-style: none;
+                font-size: 20px;
+            }
+        }
+    }
+}
